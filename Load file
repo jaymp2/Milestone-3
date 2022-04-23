@@ -1,0 +1,10 @@
+def load_file(file):
+    a_file = open(file, "r")
+
+    list_of_lists = []
+    for line in a_file:
+        stripped_line = line.strip()
+        list_of_lists.append(stripped_line)
+    
+    a_file.close()
+    return list_of_lists
